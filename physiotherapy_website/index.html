@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="Easy Physio Solution.ico" type="image/x-icon">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="banner.css" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" />
+    <title>Easy Physio Solution</title>
+</head>
+<body>
+
+	<!-- HEADER -->
+    <header id="home">
+		<nav class="navigation">
+
+			<!-- Logo -->
+			<div class="logo">
+				<img src="Easy Physio Solution.jpeg" alt=" " />
+			</div>
+			
+			<!-- Navigation -->
+			<div class="toggle" onclick="toggleMenu();"></div>
+			<ul class="menu-list">
+				<li><a href="#home" onclick="toggleMenu();">Home</a></li>
+				<li><a href="#about" onclick="toggleMenu();">About</a></li>
+				<li><a href="#service" onclick="toggleMenu();">Services</a></li>
+				<li><a href="#project" onclick="toggleMenu();">Project</a></li>
+				<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+			</ul>
+
+<!--
+			<div class="humbarger">
+				<div class="bar"></div>
+				<div class="bar2 bar"></div>
+				<div class="bar"></div>
+			</div>
+-->
+
+		</nav>
+    
+    <!-- ==== Intro Section Start ==== -->
+		<div class="intro-section" id="home">
+			<div class="bg-img"></div>
+			<div class="intro-content">
+				<h1>Physiotherapist</h1>
+				<h6>from Vadodara</h6>
+				<p class="tagline">
+					<span class="change-container">
+						<span class="changing">get what you want</span>
+						<span class="changing">how you want it</span>
+						<span class="changing">when you want it</span>
+					</span>
+				</p>
+				<div class="header-btn animated bounceIn">
+					<a href="#contact"><span>Get A Quote</span></a>
+				</div>
+				<!-- social media -->
+			</div>
+		</div>	
+	</header>
+
+	<!-- ABOUT -->
+
+	<section class="about" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>I'm Mobile and Web Developer</h3>
+                <p>My Name is Kishan Somaiya. I am currently pursuing my Bachelor of Engineering from A. D. patel Institute of Technology, Anand, Gujarat.<br><br>I'm interested in learning more about Web Development with React and Node JS and Mobile Development with React Native. I do programming with C++ and Python.</p>
+            </div>
+            <div class="w50">
+                <img src="profile.jpg" class="img">
+            </div>
+        </div>
+    </section>
+
+	<section class="service">
+		<h1>Service</h1>
+	</section>
+
+	<section class="project">
+		<h1>Project</h1>
+	</section>
+
+	<section class="contact">
+		<h1>Contact</h1>
+	</section>
+
+    <script src="script.js"></script>
+	<script>
+        
+
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu-list');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

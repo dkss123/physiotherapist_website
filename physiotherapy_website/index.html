@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="Easy Physio Solution.ico" type="image/x-icon">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="banner.css" rel="stylesheet" />
-	<link href="style.css" rel="stylesheet" />
-    <title>Easy Physio Solution</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="Easy Physio Solution.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="banner.css" rel="stylesheet" />
+	<link href="about.css" rel="stylesheet" />
+	<link rel="stylesheet" href="service.css">
+	<link rel="stylesheet" href="contact.css">
+	<title>Easy Physio Solution</title>
 </head>
+
 <body>
 
 	<!-- HEADER -->
-    <header id="home">
+	<header id="home">
 		<nav class="navigation">
 
 			<!-- Logo -->
 			<div class="logo">
 				<img src="Easy Physio Solution.jpeg" alt=" " />
 			</div>
-			
+
 			<!-- Navigation -->
 			<div class="toggle" onclick="toggleMenu();"></div>
 			<ul class="menu-list">
@@ -30,7 +34,7 @@
 				<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
 			</ul>
 
-<!--
+			<!--
 			<div class="humbarger">
 				<div class="bar"></div>
 				<div class="bar2 bar"></div>
@@ -39,13 +43,13 @@
 -->
 
 		</nav>
-    
-    <!-- ==== Intro Section Start ==== -->
+
+		<!-- ==== Intro Section Start ==== -->
 		<div class="intro-section" id="home">
 			<div class="bg-img"></div>
 			<div class="intro-content">
 				<h1>Physiotherapist</h1>
-				<h6>from Vadodara</h6>
+				<h6>from Mumbai</h6>
 				<p class="tagline">
 					<span class="change-container">
 						<span class="changing">get what you want</span>
@@ -58,48 +62,93 @@
 				</div>
 				<!-- social media -->
 			</div>
-		</div>	
+		</div>
 	</header>
 
 	<!-- ABOUT -->
 
-	<section class="about" id="about">
-        <div class="heading">
-            <h2>About Me</h2>
-        </div>
-        <div class="content">
-            <div class="contentBx w50">
-                <h3>I'm Mobile and Web Developer</h3>
-                <p>My Name is Kishan Somaiya. I am currently pursuing my Bachelor of Engineering from A. D. patel Institute of Technology, Anand, Gujarat.<br><br>I'm interested in learning more about Web Development with React and Node JS and Mobile Development with React Native. I do programming with C++ and Python.</p>
-            </div>
-            <div class="w50">
-                <img src="profile.jpg" class="img">
-            </div>
-        </div>
-    </section>
+	<section class="about1" id="about">
+
+		<div class="heading">
+			<h2>About Us</h2>
+		</div>
+
+		<div id="content">
+
+			<div class="w50">
+				<img src="Easy Physio Solution.jpeg" class="img">
+			</div>
+
+			<div class="contentBx-w50">
+				<p>
+					Easy Physio Solution is exclusively focuses on treatment techniques like Pain Management for all
+					joints & Ergonomics advice, Fall Prevention with balance training & Osteoporosis. Also in conditions
+					like Diabetes & Hypertension physiotherapy treatment.Our focus is to help relieve our patients from
+					all sorts of physical pain.Everyone has the ability to feel better.We want you to achieve that.We
+					are the paramedical doctor with over 3 years experience, we treat the individual with 360
+					approach.Each patient is treated with customized treatment.Our goal is to empower you for your own
+					health.We provide Treatment plan for neck pain, shoulder pain, knee pain, back pain, plantar
+					fascitis, ankle sprain, post fracture rehabilitation, Post surgery Rehabilitation, Bells palsy,
+					Stroke Rehab, parkinson, Cerebral Palsy etc.
+					<br>
+					<br>
+					Our goal is to empower you to become architect of your own helath.We believe that when we are
+					healthier, we are happier because when we feel better, we live more..!!!
+				</p>
+			</div>
+
+
+		</div>
+
+	</section>
+
+	<!-- Service Section -->
 
 	<section class="service">
-		<h1>Service</h1>
+		<h1 class="h-service">Service</h1>
+
+		<p class="ser">We provide a variety of treatment techniques like Pain Management for all joints & Ergonomics
+			advice, Fall Prevention with balance training & Osteoporosis. Also in conditions like Diabetes &
+			Hypertension etc.
+		</p>
 	</section>
 
-	<section class="project">
+
+	<!-- <section class="project">
 		<h1>Project</h1>
-	</section>
+	</section> -->
 
 	<section class="contact">
-		<h1>Contact</h1>
+		<h1 class="con-heading">Contact</h1>
+		<div id="contact">
+		<img src="/Images/sweety.jpeg" alt="">
+		<p class="intro-sweety">
+			<ul class="list">
+				<li>
+					Dr. Sweety Bhikadiya
+					MPT Neuro (Nanavati hospital)
+					M.I.A.P, COMT
+					Specialised in Parkinson’s
+					Stroke, Multiple sclerosis and genetic disorders
+					Specialised in Spinal Cord Injury (Bidada)
+				</li>
+			
+		</ul>
+		</p>
+	</div>
 	</section>
 
-    <script src="script.js"></script>
+	<script src="script.js"></script>
 	<script>
-        
 
-        function toggleMenu() {
-            var menuToggle = document.querySelector('.toggle');
-            var menu = document.querySelector('.menu-list');
-            menuToggle.classList.toggle('active');
-            menu.classList.toggle('active');
-        }
-    </script>
+
+		function toggleMenu() {
+			var menuToggle = document.querySelector('.toggle');
+			var menu = document.querySelector('.menu-list');
+			menuToggle.classList.toggle('active');
+			menu.classList.toggle('active');
+		}
+	</script>
 </body>
+
 </html>

@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<link rel="shortcut icon" href="Easy Physio Solution.ico" type="image/x-icon">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="banner.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="Easy Physio Solution.ico" type="image/x-icon">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="banner.css" rel="stylesheet" />
 	<link href="about.css" rel="stylesheet" />
-	<link rel="stylesheet" href="service.css">
-	<link rel="stylesheet" href="contact.css">
-	<title>Easy Physio Solution</title>
+	<link href="contact.css" rel="stylesheet" />
+	<link href="services.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <title>Easy Physio Solution</title>
 </head>
-
 <body>
 
 	<!-- HEADER -->
-	<header id="home">
+    <header id="home">
 		<nav class="navigation">
 
 			<!-- Logo -->
 			<div class="logo">
 				<img src="Easy Physio Solution.jpeg" alt=" " />
 			</div>
-
+			
 			<!-- Navigation -->
 			<div class="toggle" onclick="toggleMenu();"></div>
 			<ul class="menu-list">
@@ -31,10 +34,11 @@
 				<li><a href="#about" onclick="toggleMenu();">About</a></li>
 				<li><a href="#service" onclick="toggleMenu();">Services</a></li>
 				<li><a href="#project" onclick="toggleMenu();">Project</a></li>
+				<li><a href="#team" onclick="toggleMenu();">Team</a></li>
 				<li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
 			</ul>
 
-			<!--
+<!--
 			<div class="humbarger">
 				<div class="bar"></div>
 				<div class="bar2 bar"></div>
@@ -43,13 +47,13 @@
 -->
 
 		</nav>
-
-		<!-- ==== Intro Section Start ==== -->
+    
+    <!-- ==== Intro Section Start ==== -->
 		<div class="intro-section" id="home">
 			<div class="bg-img"></div>
 			<div class="intro-content">
 				<h1>Physiotherapist</h1>
-				<h6>from Mumbai</h6>
+				<h6>from Vadodara</h6>
 				<p class="tagline">
 					<span class="change-container">
 						<span class="changing">get what you want</span>
@@ -62,7 +66,7 @@
 				</div>
 				<!-- social media -->
 			</div>
-		</div>
+		</div>	
 	</header>
 
 	<!-- ABOUT -->
@@ -102,23 +106,30 @@
 
 	</section>
 
-	<!-- Service Section -->
+	<!-- SERVICES -->
 
-	<section class="service">
-		<h1 class="h-service">Service</h1>
-
-		<p class="ser">We provide a variety of treatment techniques like Pain Management for all joints & Ergonomics
-			advice, Fall Prevention with balance training & Osteoporosis. Also in conditions like Diabetes &
-			Hypertension etc.
-		</p>
+	<section class="services" id="services">
+		<div class="slider slider-2">
+			<div class="photos">
+			  <img src="https://i.ibb.co/3sQXw31/skate.jpg" class="shown" alt="">
+			  <img src="https://i.ibb.co/C92YGtg/shark.jpg" alt="">
+			  <img src="https://i.ibb.co/0mkkmG9/fish1.jpg" alt="">
+			  <img src="https://i.ibb.co/cNWS2Vy/fish2.jpg" alt="">
+			  <div class="buttons">
+				<div class="prev"></div>
+				<div class="next"></div>
+			  </div>
+			</div>
+		  </div>
 	</section>
 
-
-	<!-- <section class="project">
+	<section class="project">
 		<h1>Project</h1>
-	</section> -->
+	</section>
 
-	<section class="contact">
+	<!-- TEAM -->
+
+	<section class="contact" id="team">
 		<h1 class="con-heading">Contact</h1>
 		<div id="contact">
 		<img src="/Images/sweety.jpeg" alt="">
@@ -138,17 +149,163 @@
 	</div>
 	</section>
 
-	<script src="script.js"></script>
+	<!-- CONTACT -->
+
+	<section id="contact">
+  
+		<h1 class="section-header">CONTACT</h1>
+		
+		<div class="contact-wrapper">
+		  
+			<!---------------- 
+	  
+			CONTACT PAGE LEFT 
+		  
+			-----------------> 
+		  
+		  <form id="contact-form" class="form-horizontal" role="form">
+			 
+			<div class="form-group">
+			  <div class="col-sm-12">
+				<input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+			  </div>
+			</div>
+	  
+			<div class="form-group">
+			  <div class="col-sm-12">
+				<input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+			  </div>
+			</div>
+	  
+			<textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+			
+			<button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+			  <div class="button">
+				<i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+			  </div>
+			
+			</button>
+			
+		  </form>
+		  
+			<!---------------- 
+	  
+			CONTACT PAGE RIGHT 
+		  
+			-----------------> 
+		  
+			<div class="direct-contact-container">
+	  
+			  <ul class="contact-list">
+				<li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">City, State</span></i></li>
+				
+				<li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+				
+				<li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">emailme@gmail.com</a></span></i></li>
+				
+			  </ul>
+	  
+			  <hr>
+			  <ul class="social-media-list">
+				<li><a href="#" target="_blank" class="contact-icon">
+				  <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+				</li>
+				<li><a href="#" target="_blank" class="contact-icon">
+				  <i class="fa fa-twitter" aria-hidden="true"></i></a>
+				</li>
+				<li><a href="#" target="_blank" class="contact-icon">
+				  <i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</li>
+				<li><a href="#" target="_blank" class="contact-icon">
+				  <i class="fa fa-youtube" aria-hidden="true"></i></a>
+				</li>
+			  </ul>
+			  <hr>
+	  
+			  <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+	  
+			</div>
+		  
+		</div>
+		
+	  </section>  
+
+    <script src="script.js"></script>
 	<script>
+        
+
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu-list');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+	<script>
+		$(function() {
+
+			new Slider({
+				images: '.slider-1 img',
+				btnPrev: '.slider-1 .buttons .prev',
+				btnNext: '.slider-1 .buttons .next',
+				auto: false
+			});
+
+			new Slider({
+				images: '.slider-2 img',
+				btnPrev: '.slider-2 .buttons .prev',
+				btnNext: '.slider-2 .buttons .next',
+				auto: true,
+				rate: 2000
+			});
+			});
 
 
-		function toggleMenu() {
-			var menuToggle = document.querySelector('.toggle');
-			var menu = document.querySelector('.menu-list');
-			menuToggle.classList.toggle('active');
-			menu.classList.toggle('active');
-		}
+			function Slider(obj) {
+
+			this.images = $(obj.images);
+			this.auto = obj.auto;
+			this.btnPrev = obj.btnPrev;
+			this.btnNext = obj.btnNext;
+			this.rate = obj.rate || 1000;
+
+			var i = 0;
+			var slider = this;
+
+			// The "Previous" button: to remove the class .shoved, show the previous image and add the .shoved class
+			this.prev = function () {
+				slider.images.eq(i).removeClass('shown');
+				i--;
+
+				if (i < 0) {
+					i = slider.images.length - 1;
+				}
+
+				slider.images.eq(i).addClass('shown');
+			}
+
+			// The "Next" button: to remove the class .shoved, show the next image and add the .shoved class
+			this.next = function () {
+				slider.images.eq(i).removeClass('shown');
+				i++;
+
+				if (i >= slider.images.length) {
+					i = 0;
+				}
+
+				slider.images.eq(i).addClass('shown');
+			}
+
+			// To add next and prev functions when clicking the corresponding buttons
+			$(slider.btnPrev).on('click', function(){ slider.prev();});
+			$(slider.btnNext).on('click', function(){ slider.next();});
+
+			// For the automatic slider: this method calls the next function at the set rate
+			if (slider.auto)	{
+				setInterval(slider.next, slider.rate);
+			}
+			};
 	</script>
 </body>
-
 </html>

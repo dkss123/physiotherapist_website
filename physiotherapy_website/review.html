@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="review.css" rel="stylesheet" />
+    <title>Reviews</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header center">
+            <h4>Reviews For our Services</h4>
+
+            <br>
+
+            <form id="reviewForm">
+                <input type="hidden" id="hiddenId" />
+
+                <div class="input-field">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" />
+                </div>
+                
+                <div class="input-field">
+                    <label for="message">Review</label>
+                    <textarea class="materialize-textarea" id="message"></textarea>
+                </div>
+                <br><br><br>
+
+                <button class="waves-effect waves-light btn" type="submit">Add Review</button>
+
+            </form>
+
+            <br><br><br>
+
+            <ul id="reviews">
+
+            </ul>
+        </div>
+    </div>
+
+    
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="review.js"></script>
+</body>
+</html>

@@ -10,7 +10,6 @@ body {
   overflow-x: hidden;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
-  scroll-behavior: smooth;
 }
 
 header .navigation {
@@ -29,10 +28,9 @@ header .navigation .logo {
   margin-left: 20px;
 }
 
-header > .navigation > .logo > a > img {
-  height: 90px;
-  width: 90px;
-  border-radius: 15px;
+header > .navigation > .logo > img {
+  height: 50px;
+  width: 50px;
 }
 
 header .navigation .menu-list {
@@ -89,7 +87,7 @@ header .navigation .menu-list li a {
 
 .intro-section .intro-content h1 {
   color: #b1d4e0;
-  font-size: 8rem;
+  font-size: 5rem;
   letter-spacing: -1px;
   text-transform: uppercase;
   margin-top: 80px;
@@ -98,7 +96,7 @@ header .navigation .menu-list li a {
 .intro-section .intro-content h6 {
   margin-top: 5px;
   color: #b1d4e0;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 300;
 }
 
@@ -227,7 +225,8 @@ header .navigation .menu-list li a {
     color: #111 !important;
     top: 90px !important;
     left: -100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 160px 50px !important;
     text-align: center;
     width: 100% !important;
@@ -322,7 +321,8 @@ header .navigation .menu-list li a {
     color: #111 !important;
     top: 90px !important;
     left: -100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
     padding: 160px 50px !important;
     text-align: center;
     width: 100% !important;
